@@ -1,0 +1,13 @@
+
+<h3><%= @user.name+"\'s" + " " 'details' %> </h3>
+  <% @albums.each do|album|%>
+  <h4>Album name: <%=album.name %></h4>
+<%end%>
+
+<h4>Camera used:</h4>
+
+  <% @user.cameras.each do |camera| %>
+  <%= camera.model%>
+  <%= camera.description%>
+<%end%>
+

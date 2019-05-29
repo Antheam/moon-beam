@@ -1,0 +1,7 @@
+<h3>Picture details</h3>
+
+<img src="<%=@photo.image_link %>"height="300">
+    <%=link_to 'Show', photo_path(@photo)%>
+<div>Taken with:<%= @camera.model%><br></div>
+<div>Camera description: <%= @camera.description%></div>
+<%=link_to 'delete', photo_path(@photo), method: :delete  %> <br>
